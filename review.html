@@ -1,0 +1,250 @@
+<!-- ===== REVIEW PAGE ===== -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Visual - Reviws</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+ </head>
+ <body>
+<header>
+    <nav class="navbar">
+          <!-- Hamburger icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/placeholder-logo.png" alt="Robin Visuals Logo">
+        </a>
+      </div>
+
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html" role="menuitem">Home</a></li>
+        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="services.html" role="menuitem">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#service-thumbnail">Thumbnail</a></li>
+            <li><a href="#service-banner">Banner</a></li>
+            <li><a href="#service-poster">Poster</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="projects.html" role="menuitem">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="#project-thumbnail">Thumbnail</a></li>
+            <li><a href="#project-banner">Banner</a></li>
+            <li><a href="#project-poster">Poster</a></li>
+          </ul>
+        </li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="about.html" role="menuitem">About</a></li>
+        <li><a href="#contact" role="menuitem">Contact Us</a></li>
+      </ul>
+
+      <div class="youtube-btn-container">
+        <a href="#" class="youtube-btn">
+          <img src="images/youtube-icon.png" alt="YouTube Logo">
+          <span>Subscribe</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+    <div id="review-page">
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Customer Reviews</h1>
+        <div class="filter-container">
+            <label for="review-filter">Filter by rating:</label>
+            <select id="review-filter">
+                <option value="all">All Ratings</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+        </div>
+    </div>
+
+    
+    <!-- Reviews Grid -->
+<div class="review-grid">
+    <div class="review-card" data-rating="5">
+        <div class="review-left">
+            <img src="/images/client1.jpg" alt="User Avatar" class="review-avatar">
+            <div class="reviewer">Alice</div>
+        </div>
+        <div class="review-right">
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <div class="comment">Amazing product! Highly recommended.</div>
+        </div>
+    </div>
+
+    <div class="review-card" data-rating="4">
+        <div class="review-left">
+            <img src="/images/client2.jpg" alt="User Avatar" class="review-avatar">
+            <div class="reviewer">Bob</div>
+        </div>
+        <div class="review-right">
+            <div class="rating">⭐⭐⭐⭐</div>
+            <div class="comment">Very good, but shipping was slow.</div>
+        </div>
+    </div>
+
+    <div class="review-card" data-rating="3">
+        <div class="review-left">
+            <img src="/images/client3.jpg" alt="User Avatar" class="review-avatar">
+            <div class="reviewer">Charlie</div>
+        </div>
+        <div class="review-right">
+            <div class="rating">⭐⭐⭐</div>
+            <div class="comment">Average experience, nothing special.</div>
+        </div>
+    </div>
+
+    <div class="review-card" data-rating="2">
+        <div class="review-left">
+            <img src="/images/client2.jpg" alt="User Avatar" class="review-avatar">
+            <div class="reviewer">Dana</div>
+        </div>
+        <div class="review-right">
+            <div class="rating">⭐⭐</div>
+            <div class="comment">Not satisfied with the quality.</div>
+        </div>
+    </div>
+
+    <div class="review-card" data-rating="1">
+        <div class="review-left">
+            <img src="/images/client1.jpg" alt="User Avatar" class="review-avatar">
+            <div class="reviewer">Evan</div>
+        </div>
+        <div class="review-right">
+            <div class="rating">⭐</div>
+            <div class="comment">Terrible! Would not buy again.</div>
+        </div>
+    </div>
+    <div class="review-card" data-rating="5">
+    <div class="review-left">
+      <img src="/images/client1.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">Fiona</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="comment">Absolutely fantastic! Exceeded my expectations.</div>
+    </div>
+  </div>
+
+  <div class="review-card" data-rating="4">
+    <div class="review-left">
+      <img src="/images/client7.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">George</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐⭐⭐⭐</div>
+      <div class="comment">Very good, will definitely buy again.</div>
+    </div>
+  </div>
+
+  <div class="review-card" data-rating="3">
+    <div class="review-left">
+      <img src="/images/client8.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">Hannah</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐⭐⭐</div>
+      <div class="comment">It’s okay, not bad but could improve.</div>
+    </div>
+  </div>
+
+  <div class="review-card" data-rating="5">
+    <div class="review-left">
+      <img src="/images/client9.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">Ian</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="comment">Love it! Highly recommended to everyone.</div>
+    </div>
+  </div>
+
+  <div class="review-card" data-rating="2">
+    <div class="review-left">
+      <img src="/images/client10.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">Julia</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐⭐</div>
+      <div class="comment">Not impressed, quality could be better.</div>
+    </div>
+  </div>
+
+  <div class="review-card" data-rating="4">
+    <div class="review-left">
+      <img src="/images/client11.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">Kevin</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐⭐⭐⭐</div>
+      <div class="comment">Good product, arrived on time.</div>
+    </div>
+  </div>
+
+  <div class="review-card" data-rating="3">
+    <div class="review-left">
+      <img src="/images/client12.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">Laura</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐⭐⭐</div>
+      <div class="comment">Average, not too bad but not great either.</div>
+    </div>
+  </div>
+
+  <div class="review-card" data-rating="1">
+    <div class="review-left">
+      <img src="/images/client13.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">Mike</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐</div>
+      <div class="comment">Terrible experience, won’t buy again.</div>
+    </div>
+  </div>
+
+  <div class="review-card" data-rating="5">
+    <div class="review-left">
+      <img src="/images/client14.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">Nina</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="comment">Excellent service and product quality!</div>
+    </div>
+  </div>
+
+  <div class="review-card" data-rating="4">
+    <div class="review-left">
+      <img src="/images/client15.jpg" alt="User Avatar" class="review-avatar">
+      <div class="reviewer">Oscar</div>
+    </div>
+    <div class="review-right">
+      <div class="rating">⭐⭐⭐⭐</div>
+      <div class="comment">Good overall, very satisfied.</div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+            <script src="script.js" defer></script>
+ </body>
+ </html>

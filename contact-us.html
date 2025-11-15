@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Visuals - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+          <!-- Hamburger icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/placeholder-logo.png" alt="Robin Visuals Logo">
+        </a>
+      </div>
+
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html" role="menuitem">Home</a></li>
+        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="services.html" role="menuitem">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#service-thumbnail">Thumbnail</a></li>
+            <li><a href="#service-banner">Banner</a></li>
+            <li><a href="#service-poster">Poster</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="projects.html" role="menuitem">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="#project-thumbnail">Thumbnail</a></li>
+            <li><a href="#project-banner">Banner</a></li>
+            <li><a href="#project-poster">Poster</a></li>
+          </ul>
+        </li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="about.html" role="menuitem">About</a></li>
+        <li><a href="contactus.html" role="menuitem">Contact Us</a></li>
+      </ul>
+
+      <div class="youtube-btn-container">
+        <a href="#" class="youtube-btn">
+          <img src="images/youtube-icon.png" alt="YouTube Logo">
+          <span>Subscribe</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+<!-- ===== CONTACT US SECTION ===== -->
+<section id="contact-us" class="contact-section">
+    <div class="contact-heading">
+            <u>We would love to hear from you! Feel free to reach out anytime.</u>
+        </div>
+
+    <div class="contact-container">
+        
+        <!-- Left Column -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p></p>
+
+            <div class="info-item">
+                <strong>Email:</strong>
+                <a href="mailto:robinhoodbd55@gmail.com">robinhoodbd55@gmail.com</a>
+            </div>
+
+            <div class="info-item">
+                <strong>Phone:</strong>
+                <a href="tel:+880123456789">+880 123 456 789</a>
+            </div>
+
+            <div class="info-item">
+                <strong>Address:</strong> Dhaka, Bangladesh
+            </div>
+
+            <h3>Find Us</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.901371478849!2d90.39159761536434!3d23.750903394742847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8570d000001%3A0x1b7e6f25dfbb0c9b!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1700080000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="200" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- Right Column (Form) -->
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+
+            <form id="contactForm">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="form-row">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </div>
+            </form>
+
+            <!-- SUCCESS MESSAGE -->
+            <div id="contact-success" class="contact-success" style="display:none;">
+                <h2>You’ve made the right decision!</h2>
+                <p>Thank you for contacting us. We will reach out to you soon.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <p class="footer-title">Visit Us</p>
+      <div class="social-links">
+        <a href="#"><img src="images/placeholder-social1.png" alt="Social 1"></a>
+        <a href="3"><img src="images/placeholder-social2.png" alt="Social 2"></a>
+        <a href="#"><img src="images/placeholder-social2.png" alt="Social 3"></a>
+        <a href="#"><img src="images/placeholder-social1.png" alt="Social 4"></a>
+      </div>
+    </div>
+
+    <div class="footer-separator"></div>
+
+    <div class="footer-right">
+      <p class="footer-title">Payment Options</p>
+      <div class="payment-icons">
+        <img src="images/placeholder-paypal.png" alt="PayPal">
+        <img src="images/placeholder-visa.png" alt="Visa">
+        <img src="images/placeholder-paypal.png" alt="MasterCard">
+        <img src="images/placeholder-visa.png" alt="Amex">
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
