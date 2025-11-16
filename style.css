@@ -847,8 +847,8 @@ footer::before {
 }
 .payment-icons img{
      height: clamp(0.5rem, 4vw, 3rem);      /* adjust size as needed */
-    width: clamp(0.5rem, 4vw, 3rem);       /* same as height for perfect circle */
-    border-radius: 50%; /* makes the image round */
+    width: auto;       /* same as height for perfect circle */
+     /* makes the image round */
     object-fit: cover;  /* ensures image fills the circle without distortion */
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
@@ -1065,14 +1065,13 @@ footer::before {
 /* ====== Projects Hook Section ====== */
 .projects-top-hook {
     text-align: center;
-    padding: 80px 20px 10px; /* top, sides, bottom */
-    padding-top: 7rem;
+    padding-top: 5rem;
 
     background: transparent;
 }
 
 .projects-top-hook h2 {
-    font-size: 4rem;
+    font-size: clamp(0.5rem, 5vw, 4rem);
     color: #26f08b;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -1104,7 +1103,7 @@ footer::before {
     color: #00ffff;
     text-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
     margin-bottom: 4rem;
-    font-size: 5rem;
+    font-size: clamp(2rem, 5vw, 5rem);
     letter-spacing: 2px;
 }
 
@@ -1141,7 +1140,7 @@ footer::before {
 }
 
 .category-header h3 {
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2vw, 2rem);
     color: #ff00ff;
     text-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
     font-family: 'Orbitron', sans-serif;
@@ -1392,7 +1391,9 @@ footer::before {
 }
 
 
-/* ================= ABOUT PAGE CSS ================= */
+/* ==========================================
+ ==================ABOUT PAGE CSS ===============
+ ================= =============================*/
 #about-page {
     font-family: 'Montserrat', sans-serif;
     color: #000000;
@@ -1756,8 +1757,9 @@ footer::before {
 }
 
 
-
-/* ===== CONTACT US PAGE STYLES ===== */
+/* ===============================================
+ ===================CONTACT US PAGE STYLES ========
+ ================================================== */
 #contact-us {
   padding: 80px 20px;
   background: #000000; /* same dark background as homepage */
@@ -1768,7 +1770,7 @@ footer::before {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     color: #00eeff;
 }
 #contact-us .contact-container {
@@ -1870,6 +1872,7 @@ footer::before {
 /* --- Social links --- */
 #contact-us .social-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }

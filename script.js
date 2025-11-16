@@ -140,6 +140,54 @@ if (hamburger && navLinks) {
     });
 }
 
+
+// -------------------------------------------
+// HOMEPAGE CONTACT FORM (EmailJS Integration)
+// Uses hidden success message div
+// -------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const homeForm = document.getElementById("contactForm");
+    const successDiv = document.getElementById("successMessage");
+
+    if (!homeForm || !successDiv) return; // Prevent errors on other pages
+
+    // Initialize EmailJS
+    emailjs.init("IUQLreWc2EP7IojqE");
+
+    homeForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.send("service_c6l22wg", "template_umj8ly7", {
+            name: homeForm.name.value,
+            email: homeForm.email.value,
+            message: homeForm.message.value
+        })
+        .then(() => {
+
+            // Hide the entire form
+            homeForm.style.display = "none";
+
+            // Show success message div
+            successDiv.style.display = "block";
+
+        })
+        .catch((error) => {
+            console.error("EmailJS Error:", error);
+
+            // Optional: show error in the feedback <p>
+            const feedback = homeForm.querySelector(".form-feedback");
+            if(feedback){
+                feedback.textContent = "Failed to send message. Please try again.";
+                feedback.style.color = "red";
+            }
+        });
+    });
+
+});
+
+
 // ===== REVIEW PAGE FILTER JS =====
 document.addEventListener('DOMContentLoaded', function() {
     // Make sure this code runs only on the review page
@@ -318,7 +366,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!form || !successBox) return;
 
     // initialize EmailJS
-    emailjs.init("gs83BQ8dpe8QvIvzB"); // your public key
+    emailjs.init("IUQLreWc2EP7IojqE"); // your public key
 
     // when user submits form
     form.addEventListener("submit", function (e) {
@@ -333,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         // send using EmailJS
-        emailjs.send("service_jcdpzue", "template_i951eyn", templateParams)
+        emailjs.send("service_c6l22wg", "template_umj8ly7", templateParams)
             .then(() => {
 
                 // hide form smoothly
